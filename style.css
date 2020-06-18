@@ -1,24 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-/*font-family: Roboto, sans-serif:*/
-
-#homepic{
-    height: 100px;
-    width: auto;
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0;
 }
 
-/*
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+h1 {
+  font-size: 4em;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 1.1;
+  text-align: center;
+  padding: 10px;
+}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+h2{
+  font-size: 2em;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 1.1;
+  text-align: center;
+  padding: 10px;
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+h3{
+  font-size: 1em;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 1.1;
+  text-align: center;
+  padding: 10px;
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #0000005e;
+  color: #eee;
+  font-size: 20px;
+  position: fixed;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
+#landingpage{
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 3px solid black;
+}
+
+#landingwords{
+  padding-top: 10%;
+  font-size: 15px;
+  background: -webkit-linear-gradient(50deg, #03009f, #00ff4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#projectpage{
+  background: linear-gradient(57deg, #89d4cf 0%, #6e45e1 94%);
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#projects{
+  width: 70vw;
+  margin: auto;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100% 100%;
+  
+}
+
+.box{
+  background: white;
+  border: 3px solid black;
+  height: auto;
+  
+}
+
+#githubbutton{
+  background-color: black;
+  color: white;
+}
+
+#skillspage{
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  height: 50vh;
+  padding: 0px;
+  margin: 0px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#skillspage h1{
+  background: -webkit-linear-gradient(50deg, #03009f, #00ff4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
+}
+
+#skillslist{
+  display: grid;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  padding: auto;
+
+}
+
+.skill{
+  align-items: center;
+  grid-row: 1;
+  width: 6vw;
+  height: auto;
+  
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+
+
+#contactfooter{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background: linear-gradient(57deg, #89d4cf 0%, #6e45e1 94%);
+
+}
+
+#contactfooter h1{
+  font-size: 3em;
+  padding-top: 5%;
+}
+
+#contacts{
+  display: grid;
+  align-items: center;
+}
+
+.contact{
+  grid-row: 1;
+  font: courier, monospace;
+  font-size: 2em;
+  padding: 30px;
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  border: 2px solid black;
+}
+
+.contact img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+@media screen and (max-width: 580px) {
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: rgb(92, 92, 92);
+  }
+ 

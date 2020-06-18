@@ -2,74 +2,82 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tobi's Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Maybe Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <!--Landing and Nav -->
+    <section id="landingpage">
+        <nav class='cf'>
+            <ul class='cf'>
+                <li>
+                    <a href='#'>Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                <li>
+                    <a href='#'>Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                <li>
+                    <a href='#'>About</a>
+                </li>
+                <li>
+                    <a href='#'>Contact</a>
                 </li>
             </ul>
-            <span class="navbar-text">
+            <a href='#' id='openup'>MENU</a>
+        </nav>
 
-            </span>
+        <div id="landingwords">
+            <h1>Hi, I am
+                Tobi Fawole<br>
+                <em>a web developer</em></h1>
         </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class=" page1 col-md-3">
-                <h1>Tobi Fawole</h1> <br>
-                <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, doloremque?</small>
-                <div id="homepic"><img src="img/page1.svg"></div>
-            </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projectpage">
+        <h1>Projects</h1>
+
+        <div id="projects">
+            <div class="box">project 1</div>
+            <div class="box">project 2</div>
+            <div class="box">project 3</div>
+            <div class="box">project 4</div>
         </div>
-    </div>
+
+    </section>
+
+
+    <!-- Skills-->
+    <section id="skillspage">
+        <h1>Skills</h1>
+
+        <div id="skillslist">
+            <div class="skill"><img src="img/html5.png"></div>
+            <div class="skill"><img src="img/css3.png"></div>
+            <div class="skill"><img src="img/javascript.jpg"></div>
+            <div class="skill"><img src="img/java.jpg"></div>
+        </div>
+    </section>
 
 
 
+    <!-- Contact Footer -->
+    <footer id="contactfooter">
+        <h1>Contact Me</h1>
 
+        <div id="contacts">
+            <div class="contact"><img src="https://img.icons8.com/metro/26/000000/email.png" /></div>
+            <div class="contact"><img src="img/linkedin.png"></div>
+            <div class="contact"><img src="img/github.png"></div>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
